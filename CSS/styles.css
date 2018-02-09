@@ -9323,3 +9323,8 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
 /* ---------------------- GROUP EDITS ---------------------- */
 
 
+.center-text {
+
+	text-align: center;
+
+}
