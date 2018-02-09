@@ -18,13 +18,16 @@
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 				<ul class="navbar-nav mr-auto">
 					<li class="nav-item">
-						<a class="nav-link" href="#">Our Project</a>
+						<a class="nav-link" href="#introduction">Our Project</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">Our Team</a>
+						<a class="nav-link" href="#meet-the-team">Our Team</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="#">The Haps</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#requirements">Requirements</a>
 					</li>
 				</ul>
 				<form class="form-inline my-2 my-lg-0">
@@ -35,13 +38,151 @@
 
 		</nav>
 
+		&nbsp;
+		&nbsp;
+
 		<!-- this is where the introduction will go -->
 
+		<div class="row" id="introduction">
+
+			<div class="col-md-12 center-text">
+				<h2>AnyWare Chat Bot: Introduction</h2>
+			</div>
+
+		</div>
+
+		&nbsp;
+		&nbsp;
+
+		<div class="row">
+
+			<div class="col-md-2"></div>
+			<div class="col-md-8">
+				<p>The AnyWare Chat Bot (AWCB) is an interactive system that aims to ease the process of locating specific items in a warehouse. Tata Consultancy Services (TCS)--our customer--has designed a drone that can automatically fill a database with pertinent information for warehouse employees, including the location of specific items as well as their expiration dates. Our project aims to make this data quickly and easily accessible by providing a chat bot interface for warehouse employees; by allowing workers to speak or type their queries to the chat bot, the AWCB aims to make the location of specific materials simpler for employees, thus rendering the operations of the entire warehouse more efficient.</p>
+				&nbsp;
+				<p>The entire system will be composed of interdependent elements including the website as accessed by the client, the server (where the chat bot will reside), the collection of warehouse databases, and TCS's specially-designed warehouse drones. Our chat bot will be implemented as a responsive web interface that may be used from a computer, tablet, or mobile device. Every warehouse that has a database built by TCS's drones will be able to use the AWCB by simply logging in to their account and typing or speaking their queries. Our bot will (1) take the natural language input from the user, (2) translate their query from natural language into a parseable database query using current approaches in natural language processing and machine learning, (3) access the proper information from their specific warehouse's database, and (4) return the proper information in a pleasing and functional format.</p>
+			</div>
+			<div class="col-md-2"></div>
+
+		</div>
+
+		&nbsp;
+		&nbsp;
 
 		<!-- Meet the team here -->
 
+		<div class="row" id="meet-the-team">
+
+			<div class="col-md-12 center-text">
+				<h2>Meet The Team</h2>
+			</div>
+
+		</div>
+
+		&nbsp;
+		&nbsp;
+
+		<div class="row">
+
+			<div class="col-md-2"></div>
+			<div class="col-md-4 profile">
+				<p class="center-text profile-name">Isaac Cook</p>
+				<!-- profile picture will go here -->
+				<p class="center-text profile-blurb">I am a senior in Computer Engineering and the president of the UK Snowcats. In my free time I enjoy rock climbing in the Red River Gorge.</p>
+			</div>
+			<div class="col-md-4 profile">
+				<p class="center-text profile-name">Aaron Mueller</p>
+				<!-- profile picture will go here -->
+				<p class="center-text profile-blurb">I'm a senior in Computer Science and Linguistics at the University of Kentucky. My primary research interests include machine translation, computational linguistics, and endangered languages. I hope to obtain my PhD in Natural Language Processing so that I can create language technology for low-resource languages and so I can help improve translation software. Outside class, I enjoy playing and making music with my guitar and synthesizer, writing, and traveling. You can contact me at <a href="mailto:aaron.mueller@uky.edu" >aaron.mueller@uky.edu</a></p>
+			</div>
+			<div class="col-md-2"></div>
+
+		</div>
+
+		<div class="row">
+
+			<div class="col-md-2"></div>
+			<div class="col-md-4 profile">
+				<p class="center-text profile-name">Jordan Samuels</p>
+				<!-- profile picture will go here -->
+				<p class="center-text profile-blurb"></p>
+			</div>
+			<div class="col-md-4 profile">
+				<p class="center-text profile-name">Jacob Pawlak</p>
+				<!-- profile picture will go here -->
+				<p class="center-text profile-blurb">I am a senior in the Computer Science and Linguistics departments at UKY. I work with computational linguistics, corpus building, and natural language processing. In my limited free time I can be found at the barre, making a website, or enjoying nature around Lexington.</p>
+			</div>
+			<div class="col-md-2"></div>
+
+		</div>
 
 		<!-- Requirements will be put here? -->
+
+		<div class="row" id="requirements">
+
+			<div class="col-md-12 center-text">
+				<h2>Requirements for the AnyWare Chat Bot</h2>
+			</div>
+			<div class="col-md-12"></div>
+
+
+		</div>
+
+		<div class="row">
+
+			<div class="col-md-2"></div>
+                        <div class="col-md-8">
+				<p>Our project will require us to implement various features to create a cohesive and effective whole. Our priorities for this project are ordered from greatest to least priority below.</p>
+                                &nbsp;
+				<ol>
+					<li>Chat Bot <br>
+						<ul>
+							<li>Use machine learning to translate from natural language input to database queries. <br>
+								<ul>
+									<li>Use some variant of Long Short-Term Memory Networks (LSTMs), since these are the current academic standard for natural language processing (and especially machine translation) tasks.</li>
+								</ul>
+							</li>
+							<li>If input is speech, translate speech data into text input. <br>
+								<ul>
+									<li>Customers have recommended that we use a library for this to expedite speech recognition and speech-to-text; we will not have enough data to train our own speech-to-text system, so such a pre-built system will be necessary. </li>
+								</ul>
+							</li>
+							<li>Once database has been queried and information has been received, translate information to a functional and easily readable format. <br>
+								<ul>
+									<li>Use Adaptive Cards (http://adaptivecards.io/) to produce output that is informative, simple, and pleasing (prioritized in that order). </li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+
+					<li>Website Interface <br>
+						<ul>
+							<li>Will contain all databases for all warehouses.</li>
+							<li>Server will house the chat bot and its functionality.</li>
+							<li>Specific databases will be accessible by logging in.</li>
+							<li>Must be secure. <br>
+								<ul>
+									<li>Use HTTPS and password hashing, as well as any other standard secure web development practices.</li>
+								</ul>
+							</li>
+							<li>Developed with HTML, Javascript, and CSS. <br>
+								<ul>
+									<li>Use Bootstrap to develop a clean and function front-end.</li>
+									<li>Use PHP and MySQL to interface with the databases.</li>
+								</ul>
+							</li>
+							<li>Responsive Design. <br>
+								<ul>
+									<li>Mainly focus on designing for computers, tablets, and mobile devices. </li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+				</ol>
+                        </div>
+                        <div class="col-md-2"></div>
+
+		</div>
 
 	</body>
 
