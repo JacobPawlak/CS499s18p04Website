@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<html >
+
+	<head>
+		<title>CS499 Spring 2018 | Group 04 | Design</title>
+		<link rel="stylesheet" href="CSS/styles.css">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	</head>
+
+	<body>
+		<nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+			<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<a class="navbar-brand" href="http://cs.uky.edu/~jcpa229/CS499s18p04Website/">CS499 Group 04</a>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<!-- <form class="form-inline my-2 my-lg-0">
+					<input class="form-control mr-sm-2" type="text" placeholder="Search">
+					<button class="btn btn-outline-info my-2 my-sm-0" type="submit">Search</button>
+				</form> -->
+			</div>
+
+		</nav>
+
+		&nbsp;
+		&nbsp;
+
+		<div class="row" id="row">
+		  <div class="col-md-12 center-text">
+		    <h2>Overview</h2>
+		  </div>
+		</div>
+
+		&nbsp;
+		&nbsp;
+
+		<div class="row">
+
+		  <div class="col-md-2"></div>
+		  <div class="col-md-8">
+		    <p>Our project, The Anyware Chat Bot, will be an interactive system to be used in a warehouse environment that will make managing inventory of the warehouse much easier. We are working with Tata Consultancy Services (TCS) to implement a chat bot to work with their drone system. What they have done already is automated a drone to fly through a warehouse and gather information on the inventory and output that information to some warehosue management system database to update any changes. Where we come in is in the user experience, being the chat bot that will take in either a text input via a webform or spoken natural language. Our chat bot will take this input and transform it into a parseble database query that will then be passed into the warehouse managment system and then display the information returned from the database in a friendly manner.</p>
+		  </div>
+		  <div class="col-md-2"></div>
+		</div>
+
+		&nbsp;
+		&nbsp;
+
+		<div class="row" id="row">
+		  <div class="col-md-12 center-text">
+		    <h2>Environment</h2>
+		  </div>
+		</div>
+
+		&nbsp;
+		&nbsp;
+
+		<div class="row">
+
+		  <div class="col-md-2"></div>
+		  <div class="col-md-8">
+		    <p>The overall goal of this project is to develop a system that can be deployed anywhere that TCS has implemented their drone solution, thus it must be able to operate on whatever local machine they have available. FOr this to work we are developing Anyware Chat Bot to be used in a webform. This allows us to use a secure method of deploying the bot onto any system, Windows, Mac, or tablet systems. We will be using Alexa Skills Kit (ASK) in conjucture with Python ASK Flask library to develop the assisted machine learning process of the chat bot and HTML/CSS/Javascript/PHP for the UI. For testing purposes we will be using MySQL to generate a test database, because we do not have access to any warehouse management systems. In addition to MySQL we are using University of Kentucky's Multilab to host our site until we deploy it onto a dedicated server in the warehouse.</p>
+		  </div>
+		  <div class="col-md-2"></div>
+		</div>
+
+		&nbsp;
+                &nbsp;
+
+                <div class="row" id="row">
+                  <div class="col-md-12 center-text">
+                    <h2>Module Descriptions and Data Flow</h2>
+                  </div>
+                </div>
+
+                &nbsp;
+                &nbsp;
+		
+                <div class="row">
+
+                  <div class="col-md-2"></div>
+                  <div class="col-md-8">
+			<img src="IMG/DesignPlan.png" alt="Project design graphic" style="width: 100%"> &nbsp;
+			<p>Web Interface: Our web interface will connect the databases that the warehouse workers need to query, and our Alexa Skills Kit program. This will be one of the two ways to interact with the chatbot.</p> <br>
+			<p>AnyWare: This is our chatbot/Alexa skill. We are utilizing the Alexa Skill Kit and Python's Flask ASK library to make our interactive warehouse solution. The AnyWare program will be linked to the website interface, where the user can send in queries - which the AnyWare will pair with an intent and query the databse for the results. From there, the program will send back information to be deisplayed on a 'card' for the user to see.</p> <br>
+			<p>Warehouse Management Solution: The WMS will serve as our link to the customer's database. We will pull schema and search for queries through here. We are not actually allowed to see our customer's real WMS, so we will be using one that we created in its place. </p>
+			</div>
+                  <div class="col-md-2"></div>
+                </div>
+		
+
+	</body>
+
+</html>
