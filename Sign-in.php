@@ -13,6 +13,7 @@
 	echo '<link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">';
 	echo '<link href="CSS/signin.css" rel="stylesheet">';
 	echo '</head>';
+	echo '';
 
 	//<!-- connect to accounts datadase -->
 	$servername = "accounts.cpd50ukl3swz.us-east-2.rds.amazonaws.com";
@@ -40,6 +41,7 @@
 	echo '<input type="text" id="inputPassword" class="form-control" placeholder="Password" required>';
 	echo '<button class="btn btn-lg btn-primary btn-block" type="submit">Sign In</button>';
 	echo '</form>';
+	echo '';
 	echo '</body>';
 	echo '</html>';
 ?>
