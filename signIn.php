@@ -1,5 +1,10 @@
-<!doctype html>
-<!-- need to connect to accounts database at endpoint accounts.cpd50ukl3swz.us-east-2.rds.amazonaws.com --> 
+<?php
+
+
+//?>
+
+//<!doctype html>
+//<!-- need to connect to accounts database at endpoint accounts.cpd50ukl3swz.us-east-2.rds.amazonaws.com --> 
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -13,32 +18,32 @@
 
     <link href="CSS/signin.css" rel="stylesheet">
 
-    <?php
-       <!-- connect to accounts datadase -->
-       $servrname = "accounts.cpd50ukl3swz.us-east-2.rds.amazonaws.com";
+<?php
+       //<!-- connect to accounts datadase -->
+       $servername = "accounts.cpd50ukl3swz.us-east-2.rds.amazonaws.com";
        $username = "Icook";
        $password = "10994467";
 
-       <!-- create the connection -->
+       //<!-- create the connection -->
        $conn = new mysqli($servername, $username, $password);
 
        if ($conn->connect_error){
-    die("Connection failed: " . $conn->connect_error);
-    }
-    echo "Connected successfully.";
-    ?>
-    
-    <?php
-       if ($_SERVER['REQUEST_METHOD'] == 'POST')
-       {
-       require 'login.php';
+	die("Connection failed: " . $conn->connect_error);
        }
-       ?>
-    
+       echo "Connected successfully.";
+?>
+
+    //<?php
+    //   if ($_SERVER['REQUEST_METHOD'] == 'POST')
+    //   {
+    //   require 'login.php';
+    //   }
+    //   ?>
+
   </head>
 
   <body class="text-center">
-    <form method="post" action=<?php echo htmlspecialchars($_server["PHP_SELF"]);?>>
+    <form method="post" action=<?php echo htmlspecialchars($_server["PHP_SELF"]);?> >
       <h1 class="h2 mb-3 font-weight-normal">Anyware Chatbot</h1>
       <h2 class="h3 mb-3 font-weight-normal">Please Sign In</h2>
       <label for="inputUsername" class="sr-only">Username</label>
@@ -46,7 +51,8 @@
       <label for="inputPassword" class="sr-only">Password</label>
       <input type="text" id="inputPassword" class="form-control" placeholder="Password" required>
       <button class="btn btn-lg btn-primary btn-block" type="submit">Sign In</button>
-      
+
     </form>
   </body>
 </html>
+?>
