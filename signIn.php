@@ -33,6 +33,7 @@
        echo "Connected successfully.";
 ?>
 
+	  //in progress now, may or may not need
     //<?php
     //   if ($_SERVER['REQUEST_METHOD'] == 'POST')
     //   {
