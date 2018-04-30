@@ -25,14 +25,14 @@
 	//if ($conn->connect_error){
 	//	die("Connection failed: " . $conn->connect_error);
 	//}
-	echo 'Connected successfully.';
+	//echo 'Connected successfully.';
 
-	if ($_SERVER['REQUEST_METHOD'] == 'POST'){
-		require 'login.php';
-	}
+	//if ($_SERVER['REQUEST_METHOD'] == 'POST'){
+	//	require 'login.php';
+	//}
 
 	echo '<body class="text-center">';
-	echo '<form method="post" >';
+	echo '<form method="post" action="login.php" >';
 	echo '<h1 class="h2 mb-3 font-weight-normal">Anyware Chatbot</h1>';
 	echo '<h2 class="h3 mb-3 font-weight-normal">Please Sign In</h2>';
 	echo '<label for="inputUsername" class="sr-only">Username</label>';
